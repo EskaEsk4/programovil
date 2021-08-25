@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
+  rut:String = "";
+  nombreCompleto:String = "";
+  edad:BigInteger;
+  cambiarDatos(){
+    alert('pinchó botón');
+  }
 
 }
