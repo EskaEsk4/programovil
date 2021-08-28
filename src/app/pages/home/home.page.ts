@@ -13,7 +13,7 @@ export class HomePage {
   // String, boolean, number, any(cualquier dato), array(definición de arreglo)
   rut:String = "";
   nombreCompleto:String = "";
-  edad:BigInteger;
+  edad:Number;
 
 
 // declaracion de objetos tipo formulario
@@ -28,10 +28,15 @@ persona = new FormGroup({
   elNombreCompleto : new FormControl (''),
   laEdad : new FormControl ('')
 });
-
+  //creacion de arreglo que contiene el listado de "personas"
+  lista_personas = new Array();
   //Métodos de acceso
   cambiarDatos(){
-    alert('pinchó botón'+this.rut);
+    console.log(this.lista_personas);
+  }
+  grabar(){
+    console.log(this.lista_personas);
+    this.lista_personas.push(this.persona);
   }
 //IMPLEMENTACIÓN DE CÓDIGO EN JAVASCRIPT
 }

@@ -13,9 +13,10 @@
     </ion-toolbar>
   </ion-header>
 <div class="titulo">Formulario Ingreso de datos</div>
+<!--texto flotante-->
 <div class="contenido">
   <!--definición de un formulario y el método de envio "ngSubmit"-->
-  <form [formGroup]="persona"(ngSubmit)="enviar()">
+  <form [formGroup]="persona"(ngSubmit)="grabar()">
   <ion-item>
     <ion-label position="floating">Rut </ion-label>
     <!-- asociar al formulario bajo el nombre "elrut"-->
